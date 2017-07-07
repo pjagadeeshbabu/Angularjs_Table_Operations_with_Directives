@@ -1,0 +1,22 @@
+<div class="row">
+    <table class="co-lg-12 col-md-12 col-sm-12 col-xs-12">
+         <caption>Employee Details</caption>
+        <thead>
+            <tr class="row row-height">
+                    <th class="co-lg-3 col-md-3 col-sm-3 col-xs-12"> Sr.No </th>
+                    <th class="co-lg-5 col-md-5 col-sm-5 col-xs-12"> Name </th>
+                    <th class="co-lg-3 col-md-3 col-sm-3 col-xs-12"> Status </th>
+                    <th colspan="2"> Actions </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="emp in empData" class="row row-height">
+                <td class="co-lg-3 col-md-3 col-sm-3 col-xs-12">{{$index+1}}</td>
+                <td class="co-lg-5 col-md-5 col-sm-5 col-xs-12"><a>{{emp.displayName}} </a></td>
+                <td class="co-lg-3 col-md-3 col-sm-3 col-xs-12">{{emp.status}}</td>
+                <td> <button ng-click="eidtItem()"> Edit </button></td>
+                <td> <button ng-click="delete()"> Delete </button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
