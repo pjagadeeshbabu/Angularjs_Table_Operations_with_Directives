@@ -3,11 +3,11 @@ empApp.controller('empController', ['$scope', 'empService',
 	$scope.Title = "Employee Operations";	
 	$scope.empData = empService.getEmpData();
         
-    $scope.editEmp = function() {
-        alert("Edit");
+    $scope.editEmp = function(emp) {
+        alert("Edit" + emp.displayName);
     };
     
-    $scope.deleteEmp = function() {
-        alert("Delete");
+    $scope.deleteEmp = function(emp) {
+        alert("Delete" + emp.displayName);
     };
 }]);

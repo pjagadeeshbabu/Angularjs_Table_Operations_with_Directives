@@ -10,12 +10,12 @@
             </tr>
         </thead>
         <tbody>
-            <tr ng-repeat="emp in empData" class="row row-height">
+            <tr ng-repeat="emp in vm.data" class="row row-height">
                 <td class="co-lg-3 col-md-3 col-sm-3 col-xs-12">{{$index+1}}</td>
                 <td class="co-lg-5 col-md-5 col-sm-5 col-xs-12"><a>{{emp.displayName}} </a></td>
                 <td class="co-lg-3 col-md-3 col-sm-3 col-xs-12">{{emp.status}}</td>
-                <td> <button ng-click="eidtItem({emp})"> Edit </button></td>
-                <td> <button ng-click="delete({emp})"> Delete </button></td>
+                <td> <button ng-click="vm.eidtItem({emp})"> Edit </button></td>
+                <td> <button ng-click="vm.delete({emp})"> Delete </button></td>
             </tr>
         </tbody>
     </table>
