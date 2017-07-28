@@ -25,7 +25,7 @@
                     </div>   
                 </div>   
                 <div class="container">
-                    <emp-directive emp-data=empData delete=deleteEmp(emp) eidt-item=editEmp(emp)> </emp-directive>
+                    <emp-directive emp-data=empDirectiveData delete="deleteDirectiveEmp(index, emp)" eidt-item="editDirectiveEmp(index, emp)"> </emp-directive>
                 </div>    
             </div>   
             
@@ -41,7 +41,7 @@
                     </div>   
                 </div>   
                 <div class="container">
-                    <emp-component data=empData delete=deleteEmp(emp) eidt-item=editEmp(emp)> </emp-component>
+                    <emp-component data=empComponentData delete="deleteComponentEmp(index, emp)" eidt-item="editComponentEmp(index, emp)"> </emp-component>
                 </div>    
             </div>   
            

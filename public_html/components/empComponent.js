@@ -6,7 +6,9 @@ empApp.component('empComponent', {
         eidtItem : '&'
     },
     controller: function() {
-
+        editEmp = function(index, emp){
+            eidtItem(index, emp);
+        };
     },
     controllerAs: "vm"
 });
